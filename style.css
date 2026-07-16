@@ -991,4 +991,43 @@ Mobile CSS
         max-height: 220px;
     }
 
+
+    .page{
+        width: 94%;
+        padding: 16px 10px;
+    }
+    .header{
+        padding: 24px 16px;
+        margin-bottom: 20px;
+    }
+
+    .header h1{
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+     .header p{
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 12px;
+    }
+
+    .categories{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card img{
+        height: 260px;
+    }
+
+    .card p{
+        font-size: 18px;
+        padding: 14px;
+    }
+
+    .about{
+        padding: 20px;
+    }
 }
+
