@@ -19,7 +19,8 @@ const recipes = {
             "Add toppings: Drizzle the condensed milk over the top of your watermelon snow for extra sweetness and/or squeeze the juice out of your lime onto the shaved ice."
         ],
 
-        mainImage:"https://samdoesherbest.com/wp-content/uploads/2025/07/Watermelon-Shaved-Ice-1-scaled.jpg",
+        //mainImage:"https://samdoesherbest.com/wp-content/uploads/2025/07/Watermelon-Shaved-Ice-1-scaled.jpg",
+        mainImage: "https://lh3.googleusercontent.com/d/1sNEqjCLv3xhb6dCr7IdIF5g0Am_lLMJM",
         prepImage:"https://theeastcoastkitchen.com/nitropack_static/JVwXKMegmYUHkLLRqdRKKXZNEMXPKMRc/assets/images/optimized/rev-b2a9676/theeastcoastkitchen.com/wp-content/uploads/2024/07/SHAVED-FROOZEN-FRUIT-17-min-1024x576.jpg",
         video:"https://youtube.com/shorts/_auqRDSfmp4?si=823Zd6sLd-c8o1ES"
     },
@@ -43,7 +44,7 @@ const recipes = {
             "Put them in the freezer: close the lid of the container and carefully place the container in the freezer. Let the lychee freeze for at least 5 hours or overnight..",
         ],
 
-            mainImage:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2PepoP-DkJDQtHHllkC1H5i_hl6cLjOCp3xYLLEL0WhHXNFh0QA72_7k&s=10",
+            mainImage:"https://lh3.googleusercontent.com/d/1NoSYAk9ZWpPJA5COEWYkOSIR0a77MlIy",
             prepImage:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrf7j0mlFaTvvKbsc_KhMjWHt5pqHvz0_bOeDey18STHzHUXmRIU3d_Jc&s=10",
             video:"https://youtube.com/shorts/3phjf0S9nSc?si=hvFC64D1Yq4GGaWz"
     },
@@ -67,7 +68,7 @@ const recipes = {
             "Take the skewers out after 30-60 seconds and eat instantly to enjoy the perfect crunch!",
         ],
 
-        mainImage:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPOXrbrudHLXp5Hkf1-23jIaKVy1So_fvL6A&s",
+        mainImage:"https://lh3.googleusercontent.com/d/1SDiQ9wuTyHx8XD2O3sFri1skdnX7HtF-",
         prepImage:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6pkpAiAQA1ZMw9TLzb4CeEBAdcJtMsTlMzeblzAuC0_zaNxMroT9wUg&s=10",
         video:"https://youtube.com/shorts/8q61USP-uOo?si=wCRVzULvW6Y2h70t"
     },
@@ -93,7 +94,7 @@ const recipes = {
             "Pour the mixture into a container and put it in the fridge for at least 4 hours",
         ],
 
-        mainImage:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCo8p_08ygRY6wRbCZKV3icz_dAV9vgTkJYdWm3I6jUsxBVkbap8EnE9SNbMEt2HxbvQygeJuTibt9Ka-CdQ8Ae7xuBSsEFoRygTaUxPTVPhja8O9Cux5vDH4JPq_YRvpY_BzpGYxThng/s1600/Mango+Pudding02.jpg",
+        mainImage:"https://lh3.googleusercontent.com/d/1U1Sjok9pAPQ3GYIOiPzvfd39Na3AxW-3",
         prepImage:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo9MwbJTYzcbIKGX4on5KU9IMOOQK6iqxmaAZyAB8YhxQgq0vyNxCJ1Lg6A4kQD5qgLeZ2fPudIYm3k7-S7TiS3vynwWcM58LhWCUL1K_E9_pSWzU4bOeVVImRfwdv9r7lQkyhjk9OiFk/s1600/Mango+Pudding+Procedures.jpg",
         video:"https://youtube.com/shorts/EVWbR7TqFGU?si=hhBUIhmXrCx2vtNN"
     },
@@ -119,11 +120,37 @@ const recipes = {
             "Repeat 2 more times but put it into the container while it is still hot",
         ],
 
-        mainImage:"https://amish-heritage.org/wp-content/uploads/2022/10/20221031_103831-1-500x500.jpg",
+        mainImage:"https://lh3.googleusercontent.com/d/1W7ZJ-eeQxzKQ1atmDoRffmWDQtkJxmoZ",
         prepImage:"https://balancingmotherhood.com/wp-content/uploads/2019/11/layered-jello.jpg",
         video:"https://youtu.be/ByAk3IL08Jg?si=8A69AXkZQ1JSV1x-"
-    }
+    },
 
+    "watermelon-yakult-smoothie":{
+    title: "Watermelon Yakult Smoothie",
+        categoryName: "Blender",
+        categoryLink: "category3.html",
+        time: "5-10 minutes",
+        tools: "Freezer and Blender",
+        difficultyLevel: "Easy",
+        budget: "Cheap",
+        ingredients: [
+            "Fresh or Frozen Watermelon (use frozen watermelon for a thicker texture)",
+            "One bottle of Yakult",
+            "Ice cubes (for those who are using fresh watermelons)",
+            "One Can of Sprite (optional)"
+        ],
+        steps:[
+            "Cut your watermelon into slices and freeze overnight if you wants.",
+            "Prepare your ingredients: Put your watermelon slices, a bottle of Yakult, one can of Sprite (optional) and ice cubes (optional). ",
+            "Blend until smooth.",
+        ],
+
+         mainImage:"https://cdn7.kiwilimon.com/recetaimagen/40433/640x640/53783.jpg.jpg/",
+        prepImage:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8HWuUatjJctwRHih2oPKvW8MhJRuu82OUTiNgRsLCPF7OXkj7oWhiOus&s=10",
+        video:"https://youtube.com/shorts/2UP3ORT3Umo?si=CAhuzRnw-uYzvFQA"
+
+
+}
 };
 
 
@@ -168,6 +195,10 @@ if (recipeId && recipes[recipeId]){
         recipeSteps.appendChild(li);
     });
     
+    const categoryLink = document.getElementById("category-link");
+    categoryLink.href = recipe.categoryLink;
+    categoryLink.textContent = recipe.categoryName;
+
 }
 
 else {
@@ -175,3 +206,6 @@ else {
     document.getElementById("ingredients").innerHTML = "<li>No recipe data available.</li>"
     document.getElementById("recipe-steps").innerHTML = "<li>Please Return to the category page.</li>"
 }
+
+
+
