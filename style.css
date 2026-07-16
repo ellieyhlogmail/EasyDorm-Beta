@@ -1,7 +1,7 @@
 body{
     margin: 0;
     background-color: rgb(255, 255, 237);    
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #333
 }
 .page{
@@ -911,3 +911,84 @@ box-shadow: 0 5px 5px rgba(10, 0, 0, 0.08);
     color: #880e4f;
 }
 
+/*
+Mobile CSS
+*/
+
+@media (max-width: 800px) {
+    .recipe-layout{
+        grid-template-columns: 1fr;
+    }
+
+    .watermelonrecipe-box,
+    .watermelonrecipe-extra-info-box,
+    .watermelonrecipe-ingredients-box,
+    .watermelonrecipe-main-pic-box,
+    .watermelonrecipe-media-box,
+    .watermelonrecipe-title-box,
+    .lycheerecipe-box,
+    .lycheerecipe-extra-info-box,
+    .lycheerecipe-ingredients,
+    .lycheerecipe-main-pic-box,
+    .lycheerecipe-media-box,
+    .lycheerecipe-title-box,
+    .jellyrecipe-box,
+    .jellyrecipe-extra-info-box,
+    .jellyrecipe-ingredients,
+    .jellyrecipe-main-pic-box,
+    .jellyrecipe-media-box,
+    .jellyrecipe-title-box,
+    .yakultrecipe-box,
+    .yakultrecipe-extra-info-box,
+    .yakultrecipe-ingredients,
+    .yakultrecipe-ingredients-box,
+    .yakultrecipe-main-pic-box,
+    .yakultrecipe-media-box,
+    .yakultrecipe-title-box,
+    .spriterecipe-box,
+    .spriterecipe-extra-info-box,
+    .spriterecipe-ingredients,
+    .spriterecipe-main-pic-box,
+    .spriterecipe-media-box,
+    .spriterecipe-title-box,
+    .jellyrecipe-box,
+    .jellyrecipe-extra-info-box,
+    .jellyrecipe-ingredients,
+    .jellyrecipe-main-pic-box,
+    .jellyrecipe-media-box,
+    .jellyrecipe-title-box,
+    .mangorecipe-box,
+    .mangorecipe-extra-info-box,
+    .mangorecipe-ingredients,
+    .mangorecipe-main-pic-box,
+    .mangorecipe-media-box,
+    .mangorecipe-title-box {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .jellyrecipe-title-box h1,
+    .mangorecipe-title-box h1,
+    .lycheerecipe-title-box h1,
+    .spriterecipe-title-box h1,
+    .yakultrecipe-title-box h1,
+    .watermelonrecipe-title-box h1{
+        font-size: 28px;
+    }
+
+    .mangorecipe-main-pic-box img,
+    .jellyrecipe-main-pic-box img,
+    .lycheerecipe-main-pic-box img,
+    .spriterecipe-main-pic-box img,
+    .yakultrecipe-main-pic-box img,
+    .watermelonrecipe-main-pic-box img,
+    .jellyrecipe-media-box img,
+    .mangorecipe-media-box img,
+    .lycheerecipe-media-box img,
+    .spriterecipe-media-box img,
+    .yakultrecipe-media-box img,
+    .watermelonrecipe-media-box img {
+        max-height: 220px;
+    }
+
+}
