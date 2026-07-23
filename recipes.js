@@ -1,7 +1,8 @@
 const recipes = {
     "watermelon-shaved-ice":{
         title: "Watermelon Shaved Ice",
-        categoryName: "Cold Foods",
+        theme: "watermelon",
+        categoryName: "Freezer",
         categoryLink: "category1.html",
         time: "5 to 10 minutes",
         tools: "Grater, Freezer",
@@ -19,15 +20,15 @@ const recipes = {
             "Add toppings: Drizzle the condensed milk over the top of your watermelon snow for extra sweetness and/or squeeze the juice out of your lime onto the shaved ice."
         ],
 
-        //mainImage:"https://samdoesherbest.com/wp-content/uploads/2025/07/Watermelon-Shaved-Ice-1-scaled.jpg",
         mainImage: "https://lh3.googleusercontent.com/d/1sNEqjCLv3xhb6dCr7IdIF5g0Am_lLMJM",
         prepImage:"https://theeastcoastkitchen.com/nitropack_static/JVwXKMegmYUHkLLRqdRKKXZNEMXPKMRc/assets/images/optimized/rev-b2a9676/theeastcoastkitchen.com/wp-content/uploads/2024/07/SHAVED-FROOZEN-FRUIT-17-min-1024x576.jpg",
-        video:"https://youtube.com/shorts/_auqRDSfmp4?si=823Zd6sLd-c8o1ES"
+        video:"https://drive.google.com/file/d/1v5_TDoi9-TA2vz9LQTlZ8VO3E85gPmMH/preview"
     },
 
     "lychee-yogurt-snack":{
         title: "Frozen Lychee Yogurt Snack",
-        categoryName: "Cold Foods",
+        theme: "lychee",
+        categoryName: "Freezer",
         categoryLink: "category1.html",
         time: "15 to 20 minutes",
         tools: "Freezer, Piping Bag (optional)",
@@ -51,7 +52,8 @@ const recipes = {
 
     "sprite-or-water-binghulu":{
         title: "Sprite or Water Binghulu",
-        categoryName: "Cold Foods",
+        theme: "sprite",
+        categoryName: "Freezer",
         categoryLink: "category1.html",
         time: "5 minutes",
         tools: "Freezer and Skewers",
@@ -75,8 +77,9 @@ const recipes = {
 
     "mango-pudding":{
         title: "Mango Pudding",
-        categoryName: "Cold Foods",
-        categoryLink: "category1.html",
+        theme: "mango",
+        categoryName: "Fridge",
+        categoryLink: "category2.html",
         time: "15 minutes of preperation",
         tools: "Fridge and Kettle",
         difficultyLevel: "Easy",
@@ -101,8 +104,9 @@ const recipes = {
 
     "3-color-jelly":{
         title: "3 Color Jelly",
-        categoryName: "Cold Foods",
-        categoryLink: "category1.html",
+        theme: "jelly",
+        categoryName: "Fridge",
+        categoryLink: "category2.html",
         time: "3-4 hours",
         tools: "Fridge and Kettle",
         difficultyLevel: "Easy",
@@ -126,7 +130,8 @@ const recipes = {
     },
 
     "watermelon-yakult-smoothie":{
-    title: "Watermelon Yakult Smoothie",
+       title: "Watermelon Yakult Smoothie",
+        theme: "yakult",
         categoryName: "Blender",
         categoryLink: "category3.html",
         time: "5-10 minutes",
@@ -150,6 +155,32 @@ const recipes = {
         video:"https://youtube.com/shorts/2UP3ORT3Umo?si=CAhuzRnw-uYzvFQA"
 
 
+},
+
+ "berry-sorbet":{
+       title: "Smashed Berry Sorbet",
+        theme: "berry",
+        categoryName: "Freezer",
+        categoryLink: "category1.html",
+        time: "5-10 minutes",
+        tools: "Freezer",
+        difficultyLevel: "Easy",
+        budget: "Cheap",
+        ingredients: [
+            "Frozen Berries",
+            "Milk",
+        ],
+        steps:[
+            "Freeze your berries overnight beforehand",
+            "Put your berries into a bowl and add a bit of milk",
+            "Chop and mix until smooth and add milk if not enough",
+        ],
+
+         mainImage:"https://lh3.googleusercontent.com/d/1aQW7ySiOqswZPANT80g39XVEp5wzSAau",
+        prepImage:"",
+        video:""
+
+
 }
 };
 
@@ -158,8 +189,14 @@ const recipes = {
 const params = new URLSearchParams(window.location.search);
 const recipeId = params.get("id")
 
-if (recipeId && recipes[recipeId]){
+if (recipeId && recipes[recipeId]) {
     const recipe = recipes[recipeId];
+
+    // APPLY THE SPECIFIC CSS THEME TO THE CONTAINER
+    const recipeContainer = document.getElementById("recipe-container");
+    if (recipeContainer && recipe.theme) {
+        recipeContainer.setAttribute("data-theme", recipe.theme);
+    }
 
     document.title = recipe.title;
     
@@ -175,7 +212,7 @@ if (recipeId && recipes[recipeId]){
 
     const prepImage = document.getElementById("prep-image");
     prepImage.src = recipe.prepImage;
-    prepImage.alt = recipe.title + "preperation";
+    prepImage.alt = recipe.title + " preparation";
 
     const videoLink = document.getElementById("video-link");
     videoLink.href = recipe.video;
@@ -187,7 +224,6 @@ if (recipeId && recipes[recipeId]){
         ingredientsList.appendChild(li);
     });
 
-
     const recipeSteps = document.getElementById("recipe-steps");
     recipe.steps.forEach(step => {
         const li = document.createElement("li");
@@ -198,14 +234,9 @@ if (recipeId && recipes[recipeId]){
     const categoryLink = document.getElementById("category-link");
     categoryLink.href = recipe.categoryLink;
     categoryLink.textContent = recipe.categoryName;
-
+} else {
+    document.getElementById("recipe-title").textContent = "Recipe Not Found";
+    document.getElementById("ingredients").innerHTML = "<li>No recipe data available.</li>";
+    document.getElementById("recipe-steps").innerHTML = "<li>Please return to the category page.</li>";
 }
-
-else {
-    document.getElementById("recipe-title").textContent = "Recipe Not Found"
-    document.getElementById("ingredients").innerHTML = "<li>No recipe data available.</li>"
-    document.getElementById("recipe-steps").innerHTML = "<li>Please Return to the category page.</li>"
-}
-
-
 
