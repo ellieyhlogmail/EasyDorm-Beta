@@ -7,6 +7,12 @@
   <title>EasyDorm</title>
 </head>
 <body>
+
+
+<div id="loader" class="loader-overlay">
+    <div class="spinner"></div>
+    <p>Loading Recipes ...</p>
+</div> 
     <div class="page">
         <div class="header">
             <h1>EasyDorm</h1>
@@ -17,13 +23,13 @@
         <div class="card">
         <a href="category1.html">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXdLsi3jjHuwk4h4YHrcU3eX6YO9CFX7xIOwDWZ_YKzYevhGGX1vWp09Y&s=10" alt="Cold Foods Category">
-            <p>Cold Foods</p></a>
+            <p>Freezer</p></a>
             <br>
         </div>
 
         <div class="card">
             <a href=category2.html><img src="https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Garam-masala-vegetable-curry-15845cb.jpg" alt="Microwave Category">
-            <p>Microwave</p></a>
+            <p>Fridge</p></a>
             <br>
         </div>
 
@@ -35,7 +41,7 @@
 
         <div class="card">
             <a href=category4.html><img src="https://instacuppastore.com/cdn/shop/articles/kettle-recipes-hostel.jpg?v=1776863600&width=1100" alt="Kettle Category">
-            <p>Kettle</p></a>
+            <p>Kettle and Microwave</p></a>
             <br>
         </div>
     </div>
@@ -45,5 +51,21 @@
         <p>EasyDorm is a website that helps boarding students cook easy, affordable, and dorm friendly meals in a limited amount of time. <p>
     </div>
 </div>
+    <script>
+        const loader = document.getElementById("loader");
+        const categoryLink = document.querySelectorAll(".categories .card a")
+        categoryLink.forEach(link=>{
+            link.addEventListener("click", function(event){
+                event.preventDefault();
+                const targetUrl = this.getAttribute("href");
+
+                loader.classList.add("active");
+                setTimeout(() =>{
+                    window.location.href = targetUrl;
+                }, 600);
+            });
+        });
+    </script>
+
 </body>
 </html>
