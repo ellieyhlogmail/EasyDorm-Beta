@@ -3,6 +3,7 @@ body{
     background-color: rgb(255, 255, 237);    
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #333
+
 }
 .page{
     width:80%;
@@ -15,23 +16,23 @@ body{
 
 .header{
     text-align: center;
-    background-color: #8bb38d;
-    padding: 10px 5px;
-    border: 2px solid#424B54;
-    border-radius: 10px;
+    background-color: #E1B995;
+    padding: 25px 15px;
+    border-radius: 16px;
     margin-bottom: 30px;
-    color: #1e3520;
+    color: #2B1E16;
 }
 
 .header h1{
     font-size: 45px;
-    margin: 1;
+    margin: 10px;
+    font-family: 'Inter', sans-serif;
 }
 
 .header p{
     font-size: 20px;
-    margin-top: 10;
-    color: white;
+    margin-top: 10px;
+    color: #5C4033;
 }
 
 .categories {
@@ -44,12 +45,27 @@ body{
 
 
 .card {
-background-color: #4a5c4e ;
-padding: 5px 5px;
-border:2px solid whitesmoke;
-border-radius: 12px;
-text-align: center;
-box-shadow: 0 5px 5px rgba(10, 0, 0, 0.08);
+    background-color: #FAF6F0;
+    padding: 0;         
+    border: 1px solid #E1B995; 
+    border-radius: 16px; 
+    text-align: center;
+    box-shadow: 0 12px 28px rgba(43, 30, 22, 0.06); 
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow: hidden;   
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card a:hover {
+    color: #5C4033;
+}
+
+.card a, 
+.card a:visited {
+    color: #2B1E16; 
+    display: block;
+    text-decoration: none;
+    letter-spacing: 0.5px;
 }
 
 
@@ -65,25 +81,19 @@ box-shadow: 0 5px 5px rgba(10, 0, 0, 0.08);
     font-weight: bold;
     padding: 15px;
     margin: 0;
-    background-color:#424B54;
-    color: antiquewhite;
+   
+    background-color: #FAF6F0;
+    border-top: 1px solid #E1B995;
 }
 
 .card a{
-    color: antiquewhite;
     display: block;
     text-decoration: none;
 }
 
 
 
-.card1 {
-    background-color: #feccd4;
-    width:80%;
-    max-width:1000px;
-    margin:0 auto;
-    padding: 30px 20px;
-}
+
 
 .about{
     padding: 40px 20px;
@@ -128,796 +138,179 @@ box-shadow: 0 5px 5px rgba(10, 0, 0, 0.08);
     margin-top: 20px;
 }
 
-
-.watermelonrecipe-title-box{
-    background-color: rgb(250, 200, 209);
-    border: 2px solid whitesmoke;
+.recipe-title-box,
+.recipe-main-pic-box,
+.recipe-extra-info-box,
+.recipe-ingredients-box,
+.recipe-media-box,
+.recipe-box {
     border-radius: 12px;
     padding: 10px;
 }
-.watermelonrecipe-main-pic-box{
- background-color: rgb(250, 200, 209);
-    border: 2px solid whitesmoke;
-    border-radius: 12px;
-    padding: 10px;
-}
-.watermelonrecipe-box{
- background-color: rgb(250, 200, 209);
-    border: 2px solid whitesmoke;
-    border-radius: 12px;
-    padding: 10px;}
 
-.watermelonrecipe-title-box{
-    grid-column: 1/2;
-    grid-row: 1;
+.recipe-title-box { grid-column: 1/2; grid-row: 1; }
+.recipe-main-pic-box { grid-column: 2/3; grid-row: 1/3; }
+.recipe-extra-info-box { grid-column: 1/2; grid-row: 2; }
+.recipe-ingredients-box { grid-column: 1/2; grid-row: 3; }
+.recipe-media-box { grid-column: 2/3; grid-row: 3; }
+.recipe-box { grid-column: 1/3; grid-row: 4; }
 
-}
-.watermelonrecipe-title-box h1{
-    margin: 0;
-    font-size: 36px;
-    color: #1e3f20;
-    text-align: center;
-    padding: 30px;
-
-}
-
-.watermelonrecipe-main-pic-box {
-    grid-column: 2/3;
-    grid-row: 1/3;
-    background-color: #fffdf9;
-    border-radius: 12px;
-    padding: 10px;
-    border: 1px solid #9c273a;
-}
-
-.watermelonrecipe-main-pic-box img{
+.recipe-main-pic-box img, 
+.recipe-media-box img {
     width: 100%;
-    height: 100%;
     max-height: 320px;
-    object-fit: cover;
-    border-radius: 15;
-    display: block;
-}
-
-.watermelonrecipe-extra-info-box{
-    grid-column: 1/2;
-    grid-row: 2;
-    background-color: #e6f5e6;
-    border: 2px solid whitesmoke;
-    border-radius: 12px;
-    padding: 10px;
-}
-
-.watermelonrecipe-extra-info-box p, h3{
-    font-size: 20px;
-    color: #2d2d2d;
-    line-height: 1.8;
-    margin: 0;
-}
-
-.watermelonrecipe-extra-info-box strong{
-    color: #2d2d2d;
-    font-weight: bold;
-}
-
-.watermelonrecipe-ingredients-box ul, .watermelonrecipe-box ol{
-    padding-left: 20px;
-    line-height: 1.8;
-}
-
-.watermelonrecipe-ingredients-box{
-    grid-column:1/2 ;
-    grid-row: 3;
-    background-color: #ffffff;
-    border: 2px solid whitesmoke;
-    border-radius: 12px;
-    padding: 10px;
-}
-
-.watermelonrecipe-media-box{
-    grid-column:2/3;
-    grid-row: 3;
-    background-color:#f2f4f5;
-    border: 2px solid whitesmoke;
-    border-radius: 12px;
-    padding: 10px;
-    grid-template-columns: 1fr 1fr;
-}
-
-.watermelonrecipe-box{
-     grid-column:1/3;
-    grid-row: 4;
-}
-
-.watermelonrecipe-media-box img{
-    width:100%;
-    max-height: 240px;
     object-fit: cover;
     border-radius: 10px;
     display: block;
 }
 
-.watermelonrecipe-box h2{
-    color: #2d2d2d;
-    font-size: 25px;
-    line-height: 1.6;
-    text-align: center;
-}
-
-/* ------------- LYCHEE -------------------------------- */
-
-.lycheerecipe-main-pic-box{
- background-color: rgb(250, 200, 209);
+/* ================= WATERMELON THEME ================= */
+[data-theme="watermelon"] .recipe-title-box {
+    background-color: rgb(250, 200, 209);
     border: 2px solid whitesmoke;
-    border-radius: 12px;
-    padding: 10px;
 }
-.lycheerecipe-box{
- background-color: rgb(250, 200, 209);
-    border: 2px solid whitesmoke;
-    border-radius: 12px;
-    padding: 10px;}
-
-.lycheerecipe-title-box{
-    grid-column: 1/2;
-    grid-row: 1;
-     background-color: #fcdfe3;
-    border: 2px solid whitesmoke;
-    border-radius: 12px;
-    padding: 10px;
-
-}
-.lycheerecipe-title-box h1{
-    margin: 0;
-    font-size: 36px;
-    color: #1c1c24;
+[data-theme="watermelon"] .recipe-title-box h1 {
+    color: #1e3f20;
     text-align: center;
     padding: 30px;
-
 }
-
-.lycheerecipe-main-pic-box {
-    grid-column: 2/3;
-    grid-row: 1/3;
+[data-theme="watermelon"] .recipe-main-pic-box {
+    background-color: #fffdf9;
+    border: 1px solid #9c273a;
+}
+[data-theme="watermelon"] .recipe-extra-info-box {
+    background-color: #e6f5e6;
+    border: 2px solid whitesmoke;
+}
+[data-theme="watermelon"] .recipe-ingredients-box {
     background-color: #ffffff;
-    border-radius: 12px;
-    padding: 10px;
+    border: 2px solid whitesmoke;
+}
+[data-theme="watermelon"] .recipe-media-box {
+    background-color: #f2f4f5;
+    border: 2px solid whitesmoke;
+}
+[data-theme="watermelon"] .recipe-box {
+    background-color: rgb(250, 200, 209);
+    border: 2px solid whitesmoke;
 }
 
-.lycheerecipe-main-pic-box img{
-    width: 100%;
-    height: 100%;
-    max-height: 320px;
-    object-fit: cover;
-    border-radius: 15;
-    display: block;
+/* ================= LYCHEE THEME ================= */
+[data-theme="lychee"] .recipe-title-box {
+    background-color: #fcdfe3;
+    border: 2px solid whitesmoke;
 }
-
-.lycheerecipe-extra-info-box{
-    grid-column: 1/2;
-    grid-row: 2;
-    background-color:white;
-    border: 2px solid#ffcdd2;
-    border-radius: 12px;
-    padding: 10px;
+[data-theme="lychee"] .recipe-title-box h1 {
+    color: #1c1c24;
+    text-align: center;
 }
-
-.lycheerecipe-extra-info-box p, h3{
-    font-size: 20px;
-    color: #212121;
-    line-height: 1.8;
-    margin: 0;
+[data-theme="lychee"] .recipe-extra-info-box {
+    background-color: white;
+    border: 2px solid #ffcdd2;
 }
-
-.lycheerecipe-extra-info-box strong{
-    color: #2d2d2d;
-    font-weight: bold;
-}
-
-.lycheerecipe-ingredients ul, .lycheerecipe-box ol{
-    padding-left: 20px;
-    line-height: 1.8;
-}
-
-.lycheerecipe-ingredients{
-    grid-column:1/2 ;
-    grid-row: 3;
+[data-theme="lychee"] .recipe-ingredients-box {
     background-color: #ffffff;
     border: 2px solid #ffcdd2;
-    border-radius: 12px;
-    padding: 10px;
-    padding-bottom: 10px;
-    color: #212121;
 }
-
-.lycheerecipe-media-box{
-    grid-column:2/3;
-    grid-row: 3;
-    background-color:#ffffff;
-    border: 2px solid whitesmoke;
-    border-radius: 12px;
-    padding: 10px;
-    grid-template-columns: 1fr 1fr;
-}
-
-.lycheerecipe-media-box p{
-    color: rgb(78, 78, 255);
-}
-
-.lycheerecipe-box{
-     grid-column:1/3;
-    grid-row: 4;
+[data-theme="lychee"] .recipe-box {
     background-color: #fff0f2;
     color: #37474f;
 }
 
-.lycheerecipe-media-box img{
-    width:100%;
-    max-height: 240px;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
-}
-
-.lycheerecipe-box h4{
-    color: #b71c1c;
-    font-size: 25px;
-    line-height: 1.6;
+/* ================= SPRITE THEME ================= */
+[data-theme="sprite"] .recipe-title-box h1 {
+    color: #007a3d;
     text-align: center;
 }
-
-/* ------------- SPRITE -------------------------------- */
-
-.spriterecipe-main-pic-box{
-    background-color: white;
-    border: 2px solid whitesmoke;
-    border-radius: 12px;
-    padding: 10px;
-}
-.spriterecipe-box{
- background-color: white;
-    border: 2px solid whitesmoke;
-    border-radius: 12px;
-    padding: 10px;}
-
-.spriterecipe-title-box{
-    grid-column: 1/2;
-    grid-row: 1;
-     background-color: white;
-    border: 2px solid whitesmoke;
-    border-radius: 12px;
-    padding: 10px;
-
-}
-.spriterecipe-title-box h1{
-    margin: 0;
-    font-size: 36px;
-    color:#007a3d;
-    text-align: center;
-    padding: 30px;
-    font-weight: 700
-}
-
-.spriterecipe-main-pic-box {
-    grid-column: 2/3;
-    grid-row: 1/3;
-    background-color:white;
-    border-radius: 12px;
-    padding: 10px;
-}
-
-.spriterecipe-main-pic-box img{
-    width: 100%;
-    height: 100%;
-    max-height: 320px;
-    object-fit: cover;
-    border-radius: 15;
-    display: block;
-}
-
-.spriterecipe-extra-info-box{
-    grid-column: 1/2;
-    grid-row: 2;
+[data-theme="sprite"] .recipe-extra-info-box,
+[data-theme="sprite"] .recipe-ingredients-box {
     background-color: #f0f9ff;
     border: 2px solid #b3e5fc;
-    border-radius: 12px;
-    padding: 10px;
 }
-
-.spriterecipe-extra-info-box p, h3{
-    font-size: 20px;
-    color: #004d40;
-    line-height: 1.8;
-    margin: 0;
-}
-
-.spriterecipe-extra-info-box strong{
-    color: #212121;
-    font-weight: bold;
-}
-
-.spriterecipe-ingredients ul {
-    padding-left: 20px;
-    line-height: 1.8;
-    color: #212121;
-}
-
-.spriterecipe-box ol{
-    padding-left: 20px;
-    line-height: 1.8;
-}
-
-.spriterecipe-ingredients{
-    grid-column:1/2 ;
-    grid-row: 3;
-    background-color: #f0f9ff;
-    border: 2px solid #b3e5fc;
-    border-radius: 12px;
-    padding: 10px;
-    padding-bottom: 10px;
-}
-
-.spriterecipe-media-box{
-    grid-column:2/3;
-    grid-row: 3;
-    background-color:white ;
-    border: 2px solid whitesmoke;
-    border-radius: 12px;
-    padding: 10px;
-    grid-template-columns: 1fr 1fr;
-}
-
-.spriterecipe-media-box p{
-    color: #2e7d32;
-}
-
-.spriterecipe-box{
-     grid-column:1/3;
-    grid-row: 4;
+[data-theme="sprite"] .recipe-box {
     background-color: #f1f8e9;
-    color: #212121;
 }
 
-.spriterecipe-media-box img{
-    width:100%;
-    max-height: 240px;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
-}
-
-.spriterecipe-box h4{
-    color: #1b5e20;
-    font-size: 25px;
-    line-height: 1.6;
-    text-align: center;
-}
-
-/* ------------- MANGO -------------------------------- */
-
-.mangorecipe-main-pic-box p{
-    color: #bf360c;
-}
-
-.mangorecipe-main-pic-box{
-    background-color: white;
-    border: 2px solid #ffb300;
-    border-radius: 12px;
-    padding: 10px;
-}
-
-.mangorecipe-title-box{
-    grid-column: 1/2;
-    grid-row: 1;
+/* ================= MANGO THEME ================= */
+[data-theme="mango"] .recipe-title-box {
     background-color: #e65100;
-    border: 2px solid whitesmoke;
-    border-radius: 12px;
-    padding: 10px;
     color: #fffdf0;
-
 }
-.mangorecipe-title-box h1{
-    margin: 0;
-    font-size: 36px;
-    text-align: center;
-    padding: 30px;
-    font-weight: 700
-}
-
-.mangorecipe-main-pic-box {
-    grid-column: 2/3;
-    grid-row: 1/3;
-    border-radius: 12px;
-    padding: 10px;
-}
-
-.mangorecipe-main-pic-box img{
-    width: 100%;
-    height: 100%;
-    max-height: 320px;
-    object-fit: cover;
-    border-radius: 15;
-    display: block;
-}
-
-.mangorecipe-extra-info-box{
-    grid-column: 1/2;
-    grid-row: 2;
+[data-theme="mango"] .recipe-extra-info-box,
+[data-theme="mango"] .recipe-ingredients-box {
     background-color: #ffffff;
     border: 2px solid #ffe082;
-    padding: 10px;
 }
-
-.mangorecipe-extra-info-box p{
-    font-size: 20px;
-    color:#3e2723 ;
-    line-height: 1.8;
-    margin: 0;
-}
-
-.mangorecipe-extra-info-box h3{
-    color: #e65100;
-}
-
-.mangorecipe-extra-info-box strong{
-    color: #212121;
-    font-weight: bold;
-}
-
-.mangorecipe-ingredients ul {
-    padding-left: 20px;
-    line-height: 1.8;
-    color:black;
-}
-
-.mangorecipe-box ol{
-    padding-left: 20px;
-    line-height: 1.8;
-}
-
-.mangorecipe-ingredients{
-    grid-column:1/2 ;
-    grid-row: 3;
-    background-color: #ffffff;
-    border: 2px solid #ffe082;
-    border-radius: 12px;
-    padding: 10px;
-    padding-bottom: 10px;
-}
-
-.mangorecipe-ingredients h4{
-    color: #e65100;
-}
-
-.mangorecipe-ingredients p{
-    color:#3e2723 ;
-}
-
-.mangorecipe-media-box{
-    grid-column:2/3;
-    grid-row: 3;
-    background-color: #fff3e0;
-    border: 2px solid whitesmoke;
-    border-radius: 12px;
-    padding: 10px;
-    grid-template-columns: 1fr 1fr;
-    color: #e65100;
-}
-
-.mangorecipe-box{
-     grid-column:1/3;
-    grid-row: 4;
+[data-theme="mango"] .recipe-box {
     background-color: #ffb300;
     color: #3e2723;
 }
 
-.mangorecipe-media-box img{
-    width:100%;
-    max-height: 240px;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
-}
-
-.mangorecipe-box h4{
-    font-size: 25px;
-    line-height: 1.6;
-    text-align: center;
-    text-decoration: none;
-    margin-top: 15px
-}
-
-/* ------------- JELLY -------------------------------- */
-
-
-
-.jellyrecipe-main-pic-box p{
-    color: #fce4ec;
-}
-
-.jellyrecipe-main-pic-box{
-    background-color: white;
-    border: 2px dashed #b3e5fc;
-    border-radius: 12px;
-    padding: 10px;
-}
-
-.jellyrecipe-box{
-    grid-column: 1/2;
-    grid-row: 1;
-    border: 2px solid whitesmoke;
-    border-radius: 12px;
-    padding: 10px;
-
-}
-.jellyrecipe-title-box h1{
-    margin: 0;
-    font-size: 36px;
-    text-align: center;
-    padding: 30px;
-    font-weight: 700
-}
-
-.jellyrecipe-title-box{
-    color: #a3c1ad;
-    background-color: white;
-}
-
-.jellyrecipe-main-pic-box {
-    grid-column: 2/3;
-    grid-row: 1/3;
-    border-radius: 12px;
-    padding: 10px;
-}
-
-.jellyrecipe-main-pic-box img{
-    width: 100%;
-    height: 100%;
-    max-height: 320px;
-    object-fit: cover;
-    border-radius: 15;
-    display: block;
-}
-
-.jellyrecipe-extra-info-box{
-    grid-column: 1/2;
-    grid-row: 2;
+/* ================= JELLY THEME ================= */
+[data-theme="jelly"] .recipe-extra-info-box {
     background-color: #e8f5e9;
     border: 2px solid #c8e6c9;
-    padding: 10px;
 }
-
-.jellyrecipe-extra-info-box p{
-    font-size: 20px;
-    color: #2d2d2d;
-    line-height: 1.8;
-    margin: 0;
-}
-
-.jellyrecipe-extra-info-box h3{
-    color: #1b5e20;
-}
-
-.jellyrecipe-extra-info-box strong{
-    font-weight: bold;
-}
-
-.jellyrecipe-ingredients ul {
-    padding-left: 20px;
-    line-height: 1.8;
-    color:#212121;
-}
-
-.jellyrecipe-box ol{
-    padding-left: 20px;
-    line-height: 1.8;
-}
-
-.jellyrecipe-ingredients{
-    grid-column:1/2 ;
-    grid-row: 3;
+[data-theme="jelly"] .recipe-ingredients-box {
     background-color: #fce4ec;
     border: 2px solid #f8bbd0;
-    border-radius: 12px;
-    padding: 10px;
-    padding-bottom: 10px;
 }
-
-.jellyrecipe-ingredients h4{
-    color: #c2185b;
-}
-
-.jellyrecipe-ingredients p{
-    color: #212121;
-}
-
-.jellyrecipe-media-box{
-    grid-column:2/3;
-    grid-row: 3;
-    background-color: white;
-    border: 2px dashed #b3e5fc;
-    border-radius: 12px;
-    padding: 10px;
-    grid-template-columns: 1fr 1fr;
-    color: #212121;
-}
-
-.jellyrecipe-media-box p{
-    background-color: white;
-    padding: 30px 20px;
-}
-
-.jellyrecipe-box{
-     grid-column:1/3;
-    grid-row: 4;
-    background-color:#f3e5f5 ;
-    color:#212121;
+[data-theme="jelly"] .recipe-box {
+    background-color: #f3e5f5;
     border: 2px solid #e1bee7;
 }
 
-.jellyrecipe-media-box img{
-    width:100%;
-    max-height: 240px;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
-}
-
-.jellyrecipe-box h4{
-    font-size: 25px;
-    line-height: 1.6;
-    text-align: center;
-    text-decoration: none;
-    margin-top: 15px;
-    color: #4a148c;
-}
-
-.jellyrecipe-box b{
-    color:#6a1b9a;
-}
-
-
-[data-theme="yakult"]{
-
-.yakultrecipe-main-pic-box{
+/* ================= YAKULT THEME ================= */
+[data-theme="yakult"] .recipe-title-box {
     background-color: white;
-    color: #cb324c;
-    border: 2px solid #cb324c;
-    text-align: center;
-    padding: 15px;
-}
-
-.yakultrecipe-box{
-    grid-column: 1/2;
-    grid-row: 1;
-    border: 2px solid whitesmoke;
-    border-radius: 12px;
-    padding: 10px;
-
-}
-.yakultrecipe-title-box h1{
-    margin: 0;
-    font-size: 36px;
-    text-align: center;
-    padding: 30px;
-    font-weight: 800
-}
-
-.yakultrecipe-title-box{
+    border: 2px solid #ffcdfa;
     color: #880e4f;
-    background-color: white;
-    border-color: #ffcdfa;
 }
-
-.yakultrecipe-main-pic-box {
-    grid-column: 2/3;
-    grid-row: 1/3;
-    border-radius: 12px;
-    padding: 10px;
-}
-
-.yakultrecipe-main-pic-box img{
-    width: 100%;
-    height: 100%;
-    max-height: 320px;
-    object-fit: cover;
-    border-radius: 15;
-    display: block;
-}
-
-.yakultrecipe-extra-info-box{
-    grid-column: 1/2;
-    grid-row: 2;
+[data-theme="yakult"] .recipe-extra-info-box,
+[data-theme="yakult"] .recipe-ingredients-box {
     background-color: white;
     border: 2px solid #ffcdd2;
-    padding: 10px;
 }
-
-.yakultrecipe-extra-info-box p{
-    font-size: 20px;
-    color:#2d2d2d ;
-    line-height: 1.8;
-    margin: 0;
-}
-
-.yakultrecipe-extra-info-box h3{
-    color: #c2185b;
-}
-
-.yakultrecipe-extra-info-box strong{
-    font-weight: bold;
-}
-
-.yakultrecipe-ingredients ul {
-    padding-left: 20px;
-    line-height: 1.8;
-    color:#2d2d2d;
-}
-
-.yakultrecipe-box ol{
-    padding-left: 20px;
-    line-height: 1.8;
-}
-
-.yakultrecipe-ingredients-box{
-    grid-column:1/2 ;
-    grid-row: 3;
-    background-color: white;
-    border: 2px solid #ffcdd2;
-    border-radius: 12px;
-    padding: 10px;
-    padding-bottom: 10px;
-}
-
-.yakultrecipe-ingredients-box h4{
-    color: #c2185b;
-}
-
-.yakultrecipe-ingredients-box p{
-    color: #2d2d2d;
-}
-
-.yakultrecipe-media-box{
-    grid-column:2/3;
-    grid-row: 3;
-    background-color: #fff0f2;
-    border: 2px solid #ffbbbb;
-    border-radius: 12px;
-    padding: 10px;
-    grid-template-columns: 1fr 1fr;
-}
-
-.yakultrecipe-media-box p{
-    color: #cb324c;
-    padding: 30px 20px;
-}
-
-.yakultrecipe-box{
-     grid-column:1/3;
-    grid-row: 4;
+[data-theme="yakult"] .recipe-box {
     background-color: #ffebee;
-    color: #212121;
     border: 2px solid whitesmoke;
 }
 
-.yakultrecipe-media-box img{
-    width:100%;
-    max-height: 240px;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
+/* ================= BERRY THEME ================= */
+[data-theme="berry"] .recipe-title-box{
+     background-color: #F7D6DB;
+     color: #4A1E25;
+     font-family: 'Inter', sans-serif;
+     border-radius: 20px;
 }
 
-.yakultrecipe-box h4{
-    font-size: 25px;
-    line-height: 1.6;
-    text-align: center;
-    text-decoration: none;
-    margin-top: 15px;
-    color: #880e4f;
-}
+[data-theme="berry"] .recipe-extra-info-box,
+[data-theme="berry"] .recipe-ingredients-box,
+[data-theme="berry"] .recipe-media-box,
+[data-theme="berry"] .recipe-box {
+    background-color: #FCF6F7;   
+    border: 1px solid #E6C5CB;   
+    box-shadow: 0 10px 30px rgba(74, 30, 37, 0.03);
+    color: #5C242E;
+    font-family: 'Inter', sans-serif;
+    border-radius: 20px;         
 }
 
+[date-theme="berry"] .recipe-extra-info-box p,
+[date-theme="berry"] .recipe-ingredients-box ul,
+[date-theme="berry"] .recipe-box ol{
+    color: #6E3F47;            
+    font-family: 'Gill Sans', system-ui, sans-serif;
+}
+
+[date-theme="berry"] .extra-info-box strong {
+    color: #4A1E25;
+}
+
+.media-box a, .media-box a:visited {
+    color: #BD6B78;             
+    transition: color 0.2s ease;
+}
 /*
 Mobile CSS
 */
@@ -1046,7 +439,7 @@ Mobile CSS
     left:0;
     width: 100vw;
     height: 100vh;
-    background-color: #E1B995;
+    background-color: #FAF6F0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1065,8 +458,8 @@ Mobile CSS
 .spinner{
     width: 50px;
     height: 50px;
-    border: 5px solid #3B2F2F;
-    border-top: 5px solid #FFFDD0;
+    border: 5px solid #E1B995;
+    border-top: 5px solid #2B1E16;
     border-radius: 50%;
     animation: spin .8s linear infinite;
 }
