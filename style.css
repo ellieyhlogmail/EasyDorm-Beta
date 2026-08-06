@@ -1,20 +1,18 @@
-body{
+body {
     margin: 0;
-    background-color: rgb(255, 255, 237);    
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #333
-
+    background-color: rgb(255, 255, 237);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333;
 }
-.page{
-    width:80%;
-    max-width:1000px;
-    margin:0 auto;
+
+.page {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 30px 20px;
-
 }
 
-
-.header{
+.header {
     text-align: center;
     background-color: #E1B995;
     padding: 25px 15px;
@@ -23,13 +21,13 @@ body{
     color: #2B1E16;
 }
 
-.header h1{
+.header h1 {
     font-size: 45px;
     margin: 10px;
     font-family: 'Inter', sans-serif;
 }
 
-.header p{
+.header p {
     font-size: 20px;
     margin-top: 10px;
     color: #5C4033;
@@ -42,99 +40,82 @@ body{
     margin-bottom: 30px;
 }
 
-
-
 .card {
     background-color: #FAF6F0;
-    padding: 0;         
-    border: 1px solid #E1B995; 
-    border-radius: 16px; 
+    padding: 0;
+    border: 1px solid #E1B995;
+    border-radius: 16px;
     text-align: center;
-    box-shadow: 0 12px 28px rgba(43, 30, 22, 0.06); 
+    box-shadow: 0 12px 28px rgba(43, 30, 22, 0.06);
     font-family: 'Inter', system-ui, sans-serif;
-    overflow: hidden;   
+    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px grey;
+}
+
+.card a,
+.card a:visited {
+    color: #2B1E16;
+    display: block;
+    text-decoration: none;
+    letter-spacing: 0.5px;
 }
 
 .card a:hover {
     color: #5C4033;
 }
 
-.card a, 
-.card a:visited {
-    color: #2B1E16; 
-    display: block;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-}
-
-
-.card img{
+.card img {
     width: 100%;
     height: 400px;
     object-fit: cover;
-    display: block ;
+    display: block;
 }
 
-.card p{
+.card p {
     font-size: 20px;
     font-weight: bold;
     padding: 15px;
     margin: 0;
-   
     background-color: #FAF6F0;
     border-top: 1px solid #E1B995;
 }
 
-.card a{
-    display: block;
-    text-decoration: none;
-}
-
-
-
-
-
-.about{
+.about {
     padding: 40px 20px;
-    border: 2px solid#424B54;
+    border: 2px solid #424B54;
     background-color: white;
 }
 
-.about h2{
-    margin-bottom: 8px
+.about h2 {
+    margin-bottom: 8px;
 }
 
-/*CATEGORY PAGE CSS --------------------------------------------------------------------------------------------------------*/
-
-
-.breadcrumb{
+/* CATEGORY PAGE CSS */
+.breadcrumb {
     margin-bottom: 1.5%;
 }
 
-.breadcrumb a{
+.breadcrumb a {
     font-size: 18px;
     font-weight: bold;
     color: black;
-    text-decoration: None;
+    text-decoration: none;
 }
 
-.breadcrumb a:hover{
+.breadcrumb a:hover {
     text-decoration: underline;
-
 }
 
-.card a:hover{
-    transform: translateY(-4px);
-    box-shadow: 0 6px 14px grey;
-}
-
-/*RECIPE CSS-----------------------------------------------------------------------------------------------------------------*/
-
+/* RECIPE CSS */
 .recipe-layout {
     display: grid;
     grid-template-columns: 2fr 1.2fr;
-    gap: 25 px;
+    gap: 25px;
     margin-top: 20px;
 }
 
@@ -148,14 +129,37 @@ body{
     padding: 10px;
 }
 
-.recipe-title-box { grid-column: 1/2; grid-row: 1; }
-.recipe-main-pic-box { grid-column: 2/3; grid-row: 1/3; }
-.recipe-extra-info-box { grid-column: 1/2; grid-row: 2; }
-.recipe-ingredients-box { grid-column: 1/2; grid-row: 3; }
-.recipe-media-box { grid-column: 2/3; grid-row: 3; }
-.recipe-box { grid-column: 1/3; grid-row: 4; }
+.recipe-title-box {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
 
-.recipe-main-pic-box img, 
+.recipe-main-pic-box {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.recipe-extra-info-box {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+.recipe-ingredients-box {
+    grid-column: 1 / 2;
+    grid-row: 3;
+}
+
+.recipe-media-box {
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+
+.recipe-box {
+    grid-column: 1 / 3;
+    grid-row: 4;
+}
+
+.recipe-main-pic-box img,
 .recipe-media-box img {
     width: 100%;
     max-height: 320px;
@@ -163,7 +167,35 @@ body{
     border-radius: 10px;
     display: block;
 }
+/* ==================STEP IMAGES CSS==================== */
+.step-images-box {
+    grid-column: 1 / 3;
+    grid-row: 5;
+    background-color: white;
+    border: 2px solid #e6d8a8;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
 
+.step-images-box h2{
+    margin-top: 0;
+    color: #5a4630;
+}
+
+.step-images-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.step-images-gallery img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
 /* ================= WATERMELON THEME ================= */
 [data-theme="watermelon"] .recipe-title-box { 
     background-color:#EBF7E3; 
@@ -466,132 +498,209 @@ color: #7D4A52;
      border: 1px solid #F5D2D7;   
 }
 
-/*
-Mobile CSS
-*/
+/*---------------WATERMELON LYCHEE SODA RECIPE-------------*/
+[data-theme="soda"] .recipe-title-box {
+    background-color: #F2FAF8;
+    border: 2px solid #FCE6E2;
+    color: #1F4A38;
+}
+[data-theme="soda"] .recipe-extra-info-box {
+    background-color: #FCFCFA;
+    border: 2px solid #EFEAE6;
+    color: #7A2834;
+}
 
+[data-theme="soda"] .recipe-ingredients-box {
+    background-color: #FFF2F4;
+    border: 2px solid #FAD5DB;
+    color: #7A2834;
+}
+[data-theme="soda"] .recipe-box {
+    background-color: #F4FAF7;
+    border: 2px solid #D3EAE0;
+    color: #1F4A38;
+}
+
+[data-theme="soda"] .recipe-main-pic-box,
+[data-theme="soda"] .recipe-media-box{
+    background-color: #FCFCFA;
+    border: 2px solid #EFEAE6;
+}
+
+[date-theme="soda"] .recipe-extra-info-box p{
+    color: #5C544C;
+}
+
+[date-theme="soda"] .recipe-ingredients-box ul {
+    color: #7D4A52;
+}
+[date-theme="soda"] .recipe-box ol{            
+    color: #334E43;
+}
+
+[data-theme="soda"] .recipe-extra-info-box strong{
+    color: #7D4A52;
+}
+
+/*-------------------MANGO LEMONADE RECIPE-------------*/
+[data-theme="lemonade"] .recipe-title-box {
+    background-color: #FFFBE6;
+    border: 2px solid #FAF2CC;
+    color: #B88E46;
+}
+[data-theme="lemonade"] .recipe-extra-info-box {
+    background-color: #FFF2DE;
+    border: 2px solid #FADCB4;
+    color: #5C3E1F;
+}
+
+[data-theme="lemonade"] .recipe-ingredients-box {
+    background-color: #FFFDF0;
+    border: 2px solid #F2EADF;
+    color: #5C3E1F;
+}
+[data-theme="lemonade"] .recipe-box {
+    background-color: #FFFDF9;
+    border: 2px solid #F2EADF;
+    color: #5C3E1F;
+}
+
+[data-theme="lemonade"] .recipe-main-pic-box,
+[data-theme="lemonade"] .recipe-media-box{
+    background-color: #FFF2DE;
+    border: 2px solid #FADCB4;
+}
+
+[date-theme="lemonade"] .recipe-extra-info-box p{
+    color: #4A3B29;
+}
+
+[date-theme="lemonade"] .recipe-ingredients-box ul {
+    color: #4A3B29;
+}
+[date-theme="lemonade"] .recipe-box ol{            
+    color: #4A3B29;
+}
+
+[data-theme="lemonade"] .recipe-extra-info-box strong{
+    color: #5C3E1F;
+}
+/*-------------------MILK COATED BLUEBERRIES RECIPE-------------*/
+
+[data-theme="blueberries"] .recipe-title-box {
+    background-color: #F6F2FA;
+    border: 2px solid #EBE2F5;
+    color: #281F38;
+}
+[data-theme="blueberries"] .recipe-extra-info-box {
+    background-color: #FBF8FF;
+    border: 2px solid #EDE4FA;
+    color: #3A2B5C;
+}
+
+[data-theme="blueberries"] .recipe-ingredients-box {
+    background-color: #F3EEFA;
+    border: 2px solid #E4DAF3;
+    color: #3A2B5C;
+}
+[data-theme="blueberries"] .recipe-box {
+    background-color: #F8F5FC;
+    border: 2px solid #EFEAF7;
+    color: #3A2B5C;
+}
+
+[data-theme="blueberries"] .recipe-main-pic-box,
+[data-theme="blueberries"] .recipe-media-box{
+    background-color: #FCFCFA;
+    border: 2px solid #EFEAE6;
+}
+
+[date-theme="blueberries"] .recipe-extra-info-box p{
+    color: #3A2B5C;
+}
+
+[date-theme="blueberries"] .recipe-ingredients-box ul {
+    color: #3A2B5C;
+}
+[date-theme="blueberries"] .recipe-box ol{            
+    color: #3A2B5C;
+}
+
+[data-theme="blueberries"] .recipe-extra-info-box strong{
+    color: #3A2B5C;
+}
+
+/* Mobile CSS */
 @media (max-width: 800px) {
-    .recipe-layout{
+    .recipe-layout {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    .watermelonrecipe-box,
-    .watermelonrecipe-extra-info-box,
-    .watermelonrecipe-ingredients-box,
-    .watermelonrecipe-main-pic-box,
-    .watermelonrecipe-media-box,
-    .watermelonrecipe-title-box,
-    .lycheerecipe-box,
-    .lycheerecipe-extra-info-box,
-    .lycheerecipe-ingredients,
-    .lycheerecipe-main-pic-box,
-    .lycheerecipe-media-box,
-    .lycheerecipe-title-box,
-    .jellyrecipe-box,
-    .jellyrecipe-extra-info-box,
-    .jellyrecipe-ingredients,
-    .jellyrecipe-main-pic-box,
-    .jellyrecipe-media-box,
-    .jellyrecipe-title-box,
-    .yakultrecipe-box,
-    .yakultrecipe-extra-info-box,
-    .yakultrecipe-ingredients,
-    .yakultrecipe-ingredients-box,
-    .yakultrecipe-main-pic-box,
-    .yakultrecipe-media-box,
-    .yakultrecipe-title-box,
-    .spriterecipe-box,
-    .spriterecipe-extra-info-box,
-    .spriterecipe-ingredients,
-    .spriterecipe-main-pic-box,
-    .spriterecipe-media-box,
-    .spriterecipe-title-box,
-    .jellyrecipe-box,
-    .jellyrecipe-extra-info-box,
-    .jellyrecipe-ingredients,
-    .jellyrecipe-main-pic-box,
-    .jellyrecipe-media-box,
-    .jellyrecipe-title-box,
-    .mangorecipe-box,
-    .mangorecipe-extra-info-box,
-    .mangorecipe-ingredients,
-    .mangorecipe-main-pic-box,
-    .mangorecipe-media-box,
-    .mangorecipe-title-box {
+    .recipe-title-box,
+    .recipe-main-pic-box,
+    .recipe-extra-info-box,
+    .recipe-ingredients-box,
+    .recipe-media-box,
+    .recipe-box {
         grid-column: auto;
         grid-row: auto;
     }
 
-    .jellyrecipe-title-box h1,
-    .mangorecipe-title-box h1,
-    .lycheerecipe-title-box h1,
-    .spriterecipe-title-box h1,
-    .yakultrecipe-title-box h1,
-    .watermelonrecipe-title-box h1{
+    .recipe-title-box h1 {
         font-size: 28px;
     }
 
-    .mangorecipe-main-pic-box img,
-    .jellyrecipe-main-pic-box img,
-    .lycheerecipe-main-pic-box img,
-    .spriterecipe-main-pic-box img,
-    .yakultrecipe-main-pic-box img,
-    .watermelonrecipe-main-pic-box img,
-    .jellyrecipe-media-box img,
-    .mangorecipe-media-box img,
-    .lycheerecipe-media-box img,
-    .spriterecipe-media-box img,
-    .yakultrecipe-media-box img,
-    .watermelonrecipe-media-box img {
+    .recipe-main-pic-box img,
+    .recipe-media-box img {
         max-height: 220px;
     }
 
-
-    .page{
+    .page {
         width: 94%;
         padding: 16px 10px;
     }
-    .header{
+
+    .header {
         padding: 24px 16px;
         margin-bottom: 20px;
     }
 
-    .header h1{
+    .header h1 {
         font-size: 28px;
         line-height: 1.2;
     }
 
-     .header p{
+    .header p {
         font-size: 16px;
         line-height: 1.5;
         margin-top: 12px;
     }
 
-    .categories{
+    .categories {
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
-    .card img{
+    .card img {
         height: 260px;
     }
 
-    .card p{
+    .card p {
         font-size: 18px;
         padding: 14px;
     }
 
-    .about{
+    .about {
         padding: 20px;
     }
 }
 
-
-/*LOADING ANIMATION OVERLAY*/
-.loader-overlay{
+/* LOADING ANIMATION OVERLAY */
+.loader-overlay {
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     background-color: #FAF6F0;
@@ -602,24 +711,24 @@ Mobile CSS
     z-index: 9999;
     opacity: 0;
     pointer-events: none;
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
 }
 
-.loader-overlay.active{
+.loader-overlay.active {
     opacity: 1;
     pointer-events: auto;
 }
 
-.spinner{
+.spinner {
     width: 50px;
     height: 50px;
     border: 5px solid #E1B995;
     border-top: 5px solid #2B1E16;
     border-radius: 50%;
-    animation: spin .8s linear infinite;
+    animation: spin 0.8s linear infinite;
 }
 
-.loader-overlay p{
+.loader-overlay p {
     margin-top: 15px;
     font-size: 18px;
     font-weight: bold;
@@ -627,7 +736,10 @@ Mobile CSS
 }
 
 @keyframes spin {
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
-
