@@ -7,6 +7,10 @@
   <title>EasyDorm</title>
 </head>
 <body>
+    <div id="loader" class="loader-overlay">
+    <div class="spinner"></div>
+    <p>Loading Recipe ...</p>
+</div> 
 <div class="page">
 
     <div class="breadcrumb">
@@ -41,7 +45,28 @@
          <br>
     </div>
 
+    <div class="card">
+        <a href="recipe.html?id=milk-coated-blueberries"><img src="https://lh3.googleusercontent.com/d/17_y1c7aCO_37Ohwzkz9fgybJLiep05ch", alt="Milk Coated Blueberries">
+        <p>Milk Coated Blueberries</p></a>
+         <br>
+    </div>
+
 </div>
 </div>
+ <script>
+        const loader = document.getElementById("loader");
+        const categoryLink = document.querySelectorAll(".page .card a")
+        categoryLink.forEach(link=>{
+            link.addEventListener("click", function(event){
+                event.preventDefault();
+                const targetUrl = this.getAttribute("href");
+
+                loader.classList.add("active");
+                setTimeout(() =>{
+                    window.location.href = targetUrl;
+                }, 600);
+            });
+        });
+    </script>
 </body>
 </html>
