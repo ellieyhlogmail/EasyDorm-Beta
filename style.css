@@ -694,7 +694,24 @@ color: #7D4A52;
     .about {
         padding: 20px;
     }
+
+
+/*NEWLY UPDATE STEP IMAGES ON MOBILE CSS*/
+
+.step-images-box {
+    grid-column: auto;
+    grid-row: auto;
 }
+
+.step-images-gallery{
+    grid-template-columns: 1fr;
+}
+
+.steps-images-gallery img{
+    height: 200px;
+}
+}
+
 
 /* LOADING ANIMATION OVERLAY */
 .loader-overlay {
