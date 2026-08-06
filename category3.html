@@ -7,30 +7,34 @@
   <title>EasyDorm</title>
 </head>
 <body>
+    <div id="loader" class="loader-overlay">
+    <div class="spinner"></div>
+    <p>Loading Recipes ...</p>
+</div> 
 <div class="page">
     <div>
         <a href=index.html><p>Home</a></p>
     </div>
     <div class="header">
-        <h1>Blender</h1>
+        <h1>Blender and Drinks</h1>
     </div>
 
 <div class="categories">
     <div class="card">
-        <a href="recipe.html?id=watermelon-yakult-smoothie"><img src="https://cdn7.kiwilimon.com/recetaimagen/40433/640x640/53783.jpg.jpg/">
+        <a href="recipe.html?id=watermelon-yakult-smoothie"><img src="https://lh3.googleusercontent.com/d/1R5w1NfEPUFc4TsTbWnbV5mVSOykzkpl8">
         <p>Watermelon Yakult Smoothie</p></a>
         <br>
     </div>
 
     <div class="card">
-        <a href="recipe.html?id="><p>Picture 2</p>
-        <p>Recipe 2</p></a>
+        <a href="recipe.html?id=watermelon-lychee-soda"><img src="https://lh3.googleusercontent.com/d/1mOYqLFG7OLDlYL6_6csuEov9aLDNq8D9", alt="Watermelon Lychee Soda">
+        <p>Watermelon Lychee Soda</p></a>
          <br>
     </div>
 
-    <div class="card">
-        <a href="recipe.html?id="><p>Picture 3</p>
-        <p>Recipe 3</p></a>
+     <div class="card">
+        <a href="recipe.html?id=mango-lemonade"><img src="https://lh3.googleusercontent.com/d/13O3ojgb18lds5HXk8Nx3AIGUOI463lT1", alt="Mango Lemonade">
+        <p>Mango Lemonade</p></a>
          <br>
     </div>
 
@@ -41,6 +45,20 @@
     </div>
 </div>
 </div>
+<script>
+        const loader = document.getElementById("loader");
+        const categoryLink = document.querySelectorAll(".page .card a")
+        categoryLink.forEach(link=>{
+            link.addEventListener("click", function(event){
+                event.preventDefault();
+                const targetUrl = this.getAttribute("href");
 
+                loader.classList.add("active");
+                setTimeout(() =>{
+                    window.location.href = targetUrl;
+                }, 600);
+            });
+        });
+    </script>
 </body>
 </html>
