@@ -54,9 +54,7 @@ const recipes = {
         video:"",
 
         stepImages: [
-            "image1.jpg",
-            "image2.jpg",
-            "image3.jpg"
+            "https://lh3.googleusercontent.com/d/1NoSYAk9ZWpPJA5COEWYkOSIR0a77MlIy",
         ]
     },
 
@@ -84,9 +82,9 @@ const recipes = {
         video:"",
 
         stepImages: [
-            "image1.jpg",
-            "image2.jpg",
-            "image3.jpg"
+            "https://lh3.googleusercontent.com/d/1ZHGMyrxxeIm9Mjw6OKiW7mC5w4_Q6NEc",
+            "https://lh3.googleusercontent.com/d/1drkYjKlEhGg41Ab_3xZPkZaJdqliKZ67",
+            "https://lh3.googleusercontent.com/d/1XmUDZ4ao5xzlg0eTCSIfci7haV8ewA5Z"
         ]
     },
 
@@ -116,9 +114,9 @@ const recipes = {
        video:"",
 
         stepImages: [
-            "image1.jpg",
-            "image2.jpg",
-            "image3.jpg"
+            "https://lh3.googleusercontent.com/d/1o8jaSNi5NSEs2qTR_fLi1KR13WCGHBxN",
+            "https://lh3.googleusercontent.com/d/1xkCZezEHA3H520kekAGlVfA_WuEgDjyF",
+            
         ]
     },
 
@@ -141,16 +139,16 @@ const recipes = {
             "Separate the gelatin into three separate bowls and dissolve the first portion in 200 ml of hot water. Stir with a spoon until completely dissolved.",
             "Add 250 ml of water after it dissolves and let it cool for 5 to 10 minutes.",
             "Use a strainer (optional) and pour the mixture into a container, then refrigerate until it is set but not fully firm.",
-            "Repeat 2 more times, but pour each new layer into the container while it is still hot."
+            "Repeat 2 more times, but instead, pour each new layer into the container while it is still hot."
         ],
         mainImage: "https://lh3.googleusercontent.com/d/1W7ZJ-eeQxzKQ1atmDoRffmWDQtkJxmoZ",
         prepImage: "https://lh3.googleusercontent.com/d/1_hQqE2nlhwXE9KvUce9fy5h0VcXZs2wM",
         video:"",
 
         stepImages: [
-            "image1.jpg",
-            "image2.jpg",
-            "image3.jpg"
+            "https://lh3.googleusercontent.com/d/1iDtqf15ThMhykA_-lvSGR6RFmmpQJ5cO",
+            "https://lh3.googleusercontent.com/d/1hrpXaMImXZbXDszD9Ofe2EMTLPFi0y4d",
+            "https://lh3.googleusercontent.com/d/1wENFCZwiida2VIFxbeWdhxZVGo9NbHl3"
         ]
     },
 
@@ -179,9 +177,8 @@ const recipes = {
         video:"",
 
         stepImages: [
-            "image1.jpg",
-            "image2.jpg",
-            "image3.jpg"
+            "https://lh3.googleusercontent.com/d/1gZ-zydM4y03HCzQpAq5Ej4KuNe1tM_yY",
+            "https://lh3.googleusercontent.com/d/1fHMCdak31x1MCmL6mXcaoJIdHAA8IGIV",
         ]
     },
 
@@ -208,9 +205,8 @@ const recipes = {
         video:"",
 
         stepImages: [
-            "image1.jpg",
-            "image2.jpg",
-            "image3.jpg"
+            "https://lh3.googleusercontent.com/d/1zxvpJGSqv0TyXdeETIfexFm_5S-fI0ZI",
+            
         ]
     },
     
@@ -239,9 +235,9 @@ const recipes = {
         video:"",
 
         stepImages: [
-            "image1.jpg",
-            "image2.jpg",
-            "image3.jpg"
+            "https://lh3.googleusercontent.com/d/1wclefKYZZTOyGmalsmyeBbmvFpnsPcWt",
+            "https://lh3.googleusercontent.com/d/1rtXEFDHH5kH0QI_zfXWO3ktCgKxk9O3M",
+            "https://lh3.googleusercontent.com/d/1Mo2NaBrxF5NhYUOPYuuCGoGMwq2x-p0E"
         ]
 
 
@@ -280,36 +276,6 @@ const recipes = {
 
 
 },
-"milk-coated-blueberries":{
-       title: "Milk Coated Blueberries",
-        theme: "blueberries",
-        categoryName: "Freezer",
-        categoryLink: "category1.html",
-        time: "2-3 minutes",
-        tools: "Freezer",
-        difficultyLevel: "Easy",
-        budget: "Cheap",
-        ingredients: [
-            "Frozen Bluberries",
-            "Milk",
-        ],
-        steps:[
-            "Freeze your blueberries overnight beforehand",
-            "Put your berries into a bowl and add a bit of milk",
-            "Mix until all the blueberries are coated and add more milk if not enough",
-        ],
 
-         mainImage:"https://lh3.googleusercontent.com/d/17_y1c7aCO_37Ohwzkz9fgybJLiep05ch",
-        prepImage:"https://lh3.googleusercontent.com/d/1CoF_wLTnNDASsZw0J7EVaZWItCPXr2xL",
-        video:"",
-
-        stepImages: [
-            "image1.jpg",
-            "image2.jpg",
-            "image3.jpg"
-        ]
-
-
-},
 
 };
