@@ -24,9 +24,7 @@ const recipes = {
         video:"",
 
         stepImages: [
-            "image1.jpg",
-            "image2.jpg",
-            "image3.jpg"
+            "https://drive.google.com/file/d/1JY4UeX8WVQcXjtJacEhwpsA9PuYJTeI2O3fHQRTk_Tg/preview",
         ]
     },
 
