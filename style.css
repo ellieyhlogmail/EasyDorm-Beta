@@ -637,8 +637,7 @@ color: #7D4A52;
 
 /* Mobile CSS */
 @media (max-width: 800px) {
-    .recipe-layout,
-    .card {
+    .recipe-layout{
         grid-template-columns: 1fr;
         gap: 20px;
     }
@@ -652,6 +651,17 @@ color: #7D4A52;
         grid-column: auto;
         grid-row: auto;
     }
+
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+}
+
+    .card-item {
+        flex: 1 1 300px; 
+}
+
 
     .recipe-title-box h1 {
         font-size: 28px;
