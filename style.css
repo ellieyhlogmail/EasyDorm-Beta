@@ -637,7 +637,8 @@ color: #7D4A52;
 
 /* Mobile CSS */
 @media (max-width: 800px) {
-    .recipe-layout {
+    .recipe-layout,
+    .card {
         grid-template-columns: 1fr;
         gap: 20px;
     }
