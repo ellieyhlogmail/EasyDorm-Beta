@@ -33,7 +33,7 @@ body {
     color: #5C4033;
 }
 
-.categories {
+.categories .card{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
